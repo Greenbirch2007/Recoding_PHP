@@ -1,5 +1,5 @@
 <?php
-require '/vendor/autoload.php';
+require 'E:\\recoding_php\\phpspider\\vendor\\autoload.php';
 use phpspider\core\phpspider;
 
 /* Do NOT delete this comment */
@@ -14,7 +14,7 @@ $configs = array(
         'host'  => '127.0.0.1',
         'port'  => 3306,
         'user'  => 'root',
-        'pass'  => '',
+        'pass'  => '123456',
         'name'  => 'demo',
     ),
     'export' => array(
@@ -44,12 +44,12 @@ $configs = array(
     'fields' => array(
         array(
             'name' => "title",
-            'selector' => "//h1[@class='title']",
+            'selector' => '//*[@id="__next"]/div[1]/div/div/section[1]/h1/text()',
             'required' => true,
         ),
         array(
             'name' => "content",
-            'selector' => "//div[@class='show-content-free']",
+            'selector' => '//*[@id="__next"]/div[1]/div/div/section[1]/article/p[2]/text()',
             'required' => true,
         ),
     ),
